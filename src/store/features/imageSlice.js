@@ -13,7 +13,7 @@ export const fetchImages = createAsyncThunk(
   async function (sort, rejectWithValue) {
     try {
       const response = await axios
-        .get(`/api/images?sort=${sort}`)
+        .get(`https://pexels-clone-mern.herokuapp.com/api/images?sort=${sort}`)
         .then((data) => data.data.images);
       return response;
     } catch (e) {
@@ -27,7 +27,7 @@ export const fetchImagesById = createAsyncThunk(
   async function (userId, rejectWithValue) {
     try {
       const response = await axios
-        .get(`/api/images/${userId}`)
+        .get(`https://pexels-clone-mern.herokuapp.com/api/images/${userId}`)
         .then((data) => data.data.images);
       return response;
     } catch (e) {
@@ -42,7 +42,7 @@ export const addNewImage = createAsyncThunk(
     try {
       await axios
         .post(
-          `/api/images/add/${image.userId}`,
+          `https://pexels-clone-mern.herokuapp.com/api/images/add/${image.userId}`,
           { ...image },
           { headers: { "Content-Type": "application/json" } }
         )

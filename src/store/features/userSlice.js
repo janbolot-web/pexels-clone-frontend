@@ -15,7 +15,7 @@ export const registerUser = createAsyncThunk(
     try {
       await axios
         .post(
-          `/api/auth/registration`,
+          `https://pexels-clone-mern.herokuapp.com/api/auth/registration`,
           { ...user },
           {
             headers: {
@@ -38,7 +38,7 @@ export const loginUser = createAsyncThunk(
     try {
       await axios
         .post(
-          `/api/auth/login`,
+          `https://pexels-clone-mern.herokuapp.com/api/auth/login`,
           { ...user },
           {
             headers: {
@@ -60,7 +60,7 @@ export const getUserById = createAsyncThunk(
   async function (userId, { rejectWithValue, dispatch }) {
     try {
       await axios
-        .get(`/api/auth/getUserById/${userId}`)
+        .get(`https://pexels-clone-mern.herokuapp.com/api/auth/getUserById/${userId}`)
         .then((response) => dispatch(setUserData(response.data)));
     } catch (e) {
       return rejectWithValue(e);
