@@ -1,4 +1,4 @@
-import { CaretDownOutlined, UserOutlined } from "@ant-design/icons";
+import { CaretDownOutlined, CloudUploadOutlined, UserOutlined } from "@ant-design/icons";
 import { Button, Dropdown, Menu } from "antd";
 import Search from "antd/lib/input/Search";
 import React from "react";
@@ -87,6 +87,7 @@ const Header = () => {
 
               <Link to="/upload">
                 <button className="header__auth-login">Загрузить</button>
+                <button className="header__auth-login upload"><CloudUploadOutlined /></button>
               </Link>
             </>
           ) : (
@@ -104,7 +105,6 @@ const Header = () => {
           )}
         </div>
       </div>
-      
     </div>
   );
 };

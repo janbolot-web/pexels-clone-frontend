@@ -11,17 +11,11 @@ import "./Gallery.scss";
 
 const breakpointColumnsObj = {
   default: 3,
-  1100: 3,
-  700: 2,
-  500: 1,
+  1024: 2,
+  426: 1,
 };
 
 const Gallery = ({ images }) => {
-  // const dispatch = useDispatch();
-  // const getUser = (userId) => {
-  //   console.log(userId);
-  // };
-
   return (
     <div className="gallery">
       <Masonry

@@ -15,3 +15,33 @@ body {
   width: 1340px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 740px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 300px;
+  }
+}
