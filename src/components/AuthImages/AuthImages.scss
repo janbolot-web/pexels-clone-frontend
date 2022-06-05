@@ -1,0 +1,13 @@
+.authImages {
+  margin-top: -40px;
+  width: 800px;
+  overflow: hidden;
+  height: 695px;
+  &__img {
+    border-radius: 25px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}

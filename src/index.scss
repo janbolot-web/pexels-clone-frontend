@@ -1,0 +1,17 @@
+@import "antd/dist/antd.css";
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.layout {
+  background-color: white !important;
+}
+
+.container {
+  width: 1340px;
+  margin: 0 auto;
+}

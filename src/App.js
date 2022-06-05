@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Layout } from "antd";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import Header from "./components/Header";
+import useRoutes from "./routes";
+import { getUser, setUser } from "./store/features/userSlice";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
+  const routes = useRoutes();
+  const dispatch = useDispatch();
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("userData"));
+    if (data && data.token) {
+      dispatch(setUser(data));
+    }
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout className="layout">
+      <Header />
+      <div className="container">{routes}</div>
+    </Layout>
   );
 }
 

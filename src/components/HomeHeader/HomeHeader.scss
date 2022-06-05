@@ -1,0 +1,20 @@
+.homeHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+
+  &__title {
+    font-size: 18px;
+  }
+
+  &__filter {
+    &-btn {
+      border: none;
+      font-size: 14px;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}

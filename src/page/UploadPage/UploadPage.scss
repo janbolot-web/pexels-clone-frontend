@@ -1,0 +1,22 @@
+.upload {
+  width: 820px;
+  margin: 0 auto;
+  padding-top: 20px;
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+  }
+
+  &__condition {
+    margin: 0 auto;
+    width: 570px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    &-item {
+      padding-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.header {
+  margin-bottom: 80px;
+  &__inner {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: white !important;
+    // box-shadow: 0px 0px 1.5px 0px rgb(222, 222, 222);
+    font-weight: 600;
+    line-height: 19px;
+    z-index: 2;
+    margin-bottom: 10px;
+  }
+  .active {
+    background: #232a34 !important;
+    box-shadow: 0px 0px 1.5px 0px #232a34;
+  }
+
+  .active &__logo {
+    color: #fff;
+  }
+
+  &__logo {
+    font-size: 22px;
+    color: #000;
+    &:hover {
+      color: #05a081;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      margin-right: 15px;
+    }
+  }
+
+  &__search {
+    width: 710px;
+    input {
+      border: none;
+      background: #f7f7f7;
+      height: 50px;
+      border-radius: 8px;
+      width: 100%;
+      padding: 20px;
+      color: #7f7f7f;
+      font-weight: 600;
+      font-size: 16px;
+      &::placeholder {
+        color: #7f7f7f;
+      }
+    }
+    button {
+      height: 50px;
+      width: 50px;
+      background: #f7f7f7;
+      border: none;
+      border-radius: 10px;
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__auth {
+    font-size: 16px;
+    width: 290px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    button {
+      outline: none;
+      height: 50px;
+      padding: 0 20px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    &-login {
+      border: none;
+      background: #05a081;
+      color: #fff;
+      margin-right: 20px;
+      transition: all 0.1s ease;
+      &:hover {
+        background: #08b794;
+      }
+    }
+
+    &-user {
+      border: none;
+      background: #05a081;
+      color: #fff;
+      margin-right: 30px;
+      transition: all 0.3s ease;
+      &:hover {
+        border: 2px #05a081 solid;
+        color: #05a081;
+        background: #fff;
+      }
+      &:focus {
+        border: 2px #05a081 solid;
+        background: #fff;
+        color: #05a081;
+      }
+    }
+
+    &-dropdown {
+      width: 200px;
+      border-radius: 10px;
+      margin: 5px 0;
+      overflow: hidden;
+      a,
+      button {
+        border: none;
+        display: flex;
+        background-color: transparent;
+        margin: 0 10px;
+        padding: 3px 0;
+        font-size: 16px;
+        width: 150px;
+        display: block;
+      }
+      button {
+        margin-left: 3px;
+      }
+    }
+
+    &-registration {
+      background-color: #fff;
+      border: 2px solid #05a081;
+      color: #05a081;
+      transition: all 0.1s ease;
+      &:hover {
+        border-color: #0aba97;
+        color: #0aba97;
+      }
+    }
+  }
+}
